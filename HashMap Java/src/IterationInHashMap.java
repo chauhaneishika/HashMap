@@ -1,15 +1,19 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class IterationInHashMap {
     static void main() {
+        HashMap<String, Integer> map =  new HashMap<>();
 
-        int arr[] = {12,15,18};
-        for(int i=0; i<3; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
+        //Insertion
+        map.put("India", 120);
+        map.put("US", 30);
+        map.put("China", 150);
+        //for(int val : arr)
 
-        for(int val : arr) {
-            System.out.print(val + " ");
+        for(Map.Entry<String, Integer> e : map.entrySet()) {
+            System.out.println(e.getKey());
+            System.out.println(e.getValue());
         }
-        System.out.println();
     }
 }
