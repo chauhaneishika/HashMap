@@ -1,4 +1,12 @@
-This repository is created to learn and understand HashMaps (also known as Hash Tables).
-It covers the core concepts, basic implementation, and common use cases of hash maps in programming.
+# Advanced Java Concepts 🚀
 
-HashMaps store data in key–value pairs and provide fast access to values using keys.
+This repository contains a comprehensive collection of **advanced Java concepts** with explanations, examples, and best practices. It is designed for **intermediate to advanced Java developers** who want to strengthen their core Java knowledge.
+Advanced-Java/
+│── core/
+│── collections/
+│── multithreading/
+│── streams/
+│── jdbc/
+│── design-patterns/
+│── performance/
+└── README.md
