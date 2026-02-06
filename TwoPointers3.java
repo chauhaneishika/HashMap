@@ -61,6 +61,7 @@ public class TwoPointers3 {
         printArray(arr);
         int[] ans = sortSquares(arr);
         System.out.println("Sorted Array: ");
+        reverse(ans);
         printArray(ans);
     }
 }
