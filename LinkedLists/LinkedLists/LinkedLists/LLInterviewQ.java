@@ -44,17 +44,22 @@ public class LLInterviewQ {
         }
         return slow;
     }
-    public static void deleteNthFromEnd(Node head, int n) {
+    public static Node deleteNthFromEnd(Node head, int n) {
         Node slow = head;
         Node fast = head;
         for(int i=1; i<=n; i++) {
             fast = fast.next;
+        }
+        if(fast == null) {
+            head = head.next;
+            return head;
         }
         while(fast.next != null) {
             slow = slow.next;
             fast = fast.next;
         }
         slow.next = slow.next.next;
+        return head;
     }
     public static class Node{
         int data;
@@ -87,7 +92,7 @@ public class LLInterviewQ {
         //Node q = nthNode2(a,4);
         //System.out.println(q.data);
         display(a);
-        deleteNthFromEnd(a, 2);
+        a = deleteNthFromEnd(a, 6);
         display(a);
     }
 }
